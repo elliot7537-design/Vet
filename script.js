@@ -101,6 +101,53 @@
   }
 
   /* ----------------------------------------------------------
+     SERVICES HORIZONTAL SCROLL — arrows + drag-to-scroll
+  ---------------------------------------------------------- */
+  function initServicesScroll() {
+    const track = document.querySelector('.services__track');
+    const prev  = document.getElementById('servicesPrev');
+    const next  = document.getElementById('servicesNext');
+    if (!track) return;
+
+    const STEP = 324; // card width (300) + gap (24)
+
+    function updateArrows() {
+      if (!prev || !next) return;
+      prev.disabled = track.scrollLeft <= 0;
+      next.disabled = track.scrollLeft >= track.scrollWidth - track.clientWidth - 2;
+    }
+
+    if (prev) prev.addEventListener('click', () => {
+      track.scrollBy({ left: -STEP, behavior: 'smooth' });
+    });
+    if (next) next.addEventListener('click', () => {
+      track.scrollBy({ left: STEP, behavior: 'smooth' });
+    });
+
+    track.addEventListener('scroll', updateArrows, { passive: true });
+    updateArrows();
+
+    // Drag-to-scroll (mouse)
+    let isDragging = false, startX = 0, scrollStart = 0;
+
+    track.addEventListener('mousedown', e => {
+      isDragging = true;
+      startX      = e.pageX;
+      scrollStart = track.scrollLeft;
+      track.style.userSelect = 'none';
+    });
+    window.addEventListener('mousemove', e => {
+      if (!isDragging) return;
+      track.scrollLeft = scrollStart - (e.pageX - startX);
+    });
+    window.addEventListener('mouseup', () => {
+      isDragging = false;
+      track.style.userSelect = '';
+      updateArrows();
+    });
+  }
+
+  /* ----------------------------------------------------------
      NAVBAR SCROLL SHADOW
   ---------------------------------------------------------- */
   function initNavScroll() {
@@ -297,6 +344,7 @@
 
     initHamburger();
     initNavScroll();
+    initServicesScroll();
     initContactForm();
     initScrollReveal();
     initActiveNav();

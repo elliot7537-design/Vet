@@ -138,50 +138,118 @@
         <h2 data-en="Complete Care for Every Pet" data-es="Cuidado Completo para Cada Mascota">Complete Care for Every Pet</h2>
         <p data-en="From routine checkups to complex surgeries — we've got your furry family member covered." data-es="Desde revisiones de rutina hasta cirugías complejas, cubrimos a tu peludo familiar.">From routine checkups to complex surgeries — we've got your furry family member covered.</p>
       </div>
+    </div>
 
-      <div class="services__grid">
+    <!-- full-bleed scroll track — intentionally outside .container -->
+    <div class="services__scroll-wrap" id="servicesScroll">
+      <div class="services__track">
+
+        <!-- 1. Wellness Exams — cat -->
         <div class="service-card service-card--pink">
-          <div class="service-card__icon">🩺</div>
-          <h3 data-en="Wellness Exams" data-es="Exámenes de Bienestar">Wellness Exams</h3>
-          <p data-en="Annual and bi-annual checkups to keep your pet in peak health. Full nose-to-tail evaluations." data-es="Revisiones anuales y semianuales para mantener a tu mascota en su mejor estado de salud.">Annual and bi-annual checkups to keep your pet in peak health. Full nose-to-tail evaluations.</p>
-          <span class="service-card__price" data-en="From $25 USD" data-es="Desde $25 USD">From $25 USD</span>
+          <div class="service-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1535268647677-300dbf3d78d1?w=600&h=380&fit=crop&q=80"
+                 alt="Cat wellness exam" class="service-card__img" />
+            <span class="service-card__color-bar"></span>
+          </div>
+          <div class="service-card__body">
+            <h3 data-en="Wellness Exams" data-es="Exámenes de Bienestar">Wellness Exams</h3>
+            <p data-en="Annual and bi-annual checkups to keep your pet in peak health. Full nose-to-tail evaluations." data-es="Revisiones anuales y semianuales para mantener a tu mascota en su mejor estado de salud.">Annual and bi-annual checkups to keep your pet in peak health. Full nose-to-tail evaluations.</p>
+            <span class="service-card__price" data-en="From $25 USD" data-es="Desde $25 USD">From $25 USD</span>
+          </div>
         </div>
 
+        <!-- 2. Vaccinations — dog -->
         <div class="service-card service-card--blue">
-          <div class="service-card__icon">💉</div>
-          <h3 data-en="Vaccinations" data-es="Vacunaciones">Vaccinations</h3>
-          <p data-en="Core and non-core vaccines for dogs and cats. US-standard protocols at Mexican prices." data-es="Vacunas básicas y adicionales para perros y gatos. Protocolos al estándar de EE.UU. a precios mexicanos.">Core and non-core vaccines for dogs and cats. US-standard protocols at Mexican prices.</p>
-          <span class="service-card__price" data-en="From $15 USD" data-es="Desde $15 USD">From $15 USD</span>
+          <div class="service-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1601758228041-f3b2795255f1?w=600&h=380&fit=crop&q=80"
+                 alt="Dog vaccination" class="service-card__img" />
+            <span class="service-card__color-bar"></span>
+          </div>
+          <div class="service-card__body">
+            <h3 data-en="Vaccinations" data-es="Vacunaciones">Vaccinations</h3>
+            <p data-en="Core and non-core vaccines for dogs and cats. US-standard protocols at Mexican prices." data-es="Vacunas básicas y adicionales para perros y gatos. Protocolos al estándar de EE.UU. a precios mexicanos.">Core and non-core vaccines for dogs and cats. US-standard protocols at Mexican prices.</p>
+            <span class="service-card__price" data-en="From $15 USD" data-es="Desde $15 USD">From $15 USD</span>
+          </div>
         </div>
 
+        <!-- 3. Diagnostics — cat -->
         <div class="service-card service-card--green">
-          <div class="service-card__icon">🔬</div>
-          <h3 data-en="Diagnostics & Lab" data-es="Diagnósticos y Laboratorio">Diagnostics & Lab</h3>
-          <p data-en="In-house bloodwork, urinalysis, X-rays, and ultrasounds with fast turnaround results." data-es="Análisis de sangre, orina, radiografías y ultrasonidos internos con resultados rápidos.">In-house bloodwork, urinalysis, X-rays, and ultrasounds with fast turnaround results.</p>
-          <span class="service-card__price" data-en="From $30 USD" data-es="Desde $30 USD">From $30 USD</span>
+          <div class="service-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1612349317150-e413f6a5b16d?w=600&h=380&fit=crop&crop=top&q=80"
+                 alt="Cat diagnostics" class="service-card__img" />
+            <span class="service-card__color-bar"></span>
+          </div>
+          <div class="service-card__body">
+            <h3 data-en="Diagnostics &amp; Lab" data-es="Diagnósticos y Laboratorio">Diagnostics &amp; Lab</h3>
+            <p data-en="In-house bloodwork, urinalysis, X-rays, and ultrasounds with fast turnaround results." data-es="Análisis de sangre, orina, radiografías y ultrasonidos internos con resultados rápidos.">In-house bloodwork, urinalysis, X-rays, and ultrasounds with fast turnaround results.</p>
+            <span class="service-card__price" data-en="From $30 USD" data-es="Desde $30 USD">From $30 USD</span>
+          </div>
         </div>
 
+        <!-- 4. Surgery — dog -->
         <div class="service-card service-card--yellow">
-          <div class="service-card__icon">🔪</div>
-          <h3 data-en="Surgery" data-es="Cirugía">Surgery</h3>
-          <p data-en="Spay/neuter, soft tissue, and orthopedic procedures. Board-certified surgeons, full anesthesia monitoring." data-es="Esterilizaciones, tejidos blandos y procedimientos ortopédicos. Cirujanos certificados, monitoreo total.">Spay/neuter, soft tissue, and orthopedic procedures. Board-certified surgeons, full anesthesia monitoring.</p>
-          <span class="service-card__price" data-en="From $80 USD" data-es="Desde $80 USD">From $80 USD</span>
+          <div class="service-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=600&h=380&fit=crop&q=80"
+                 alt="Dog surgery care" class="service-card__img" />
+            <span class="service-card__color-bar"></span>
+          </div>
+          <div class="service-card__body">
+            <h3 data-en="Surgery" data-es="Cirugía">Surgery</h3>
+            <p data-en="Spay/neuter, soft tissue, and orthopedic procedures. Board-certified surgeons, full anesthesia monitoring." data-es="Esterilizaciones, tejidos blandos y procedimientos ortopédicos. Cirujanos certificados, monitoreo total.">Spay/neuter, soft tissue, and orthopedic procedures. Board-certified surgeons, full anesthesia monitoring.</p>
+            <span class="service-card__price" data-en="From $80 USD" data-es="Desde $80 USD">From $80 USD</span>
+          </div>
         </div>
 
+        <!-- 5. Dental Care — cat -->
         <div class="service-card service-card--purple">
-          <div class="service-card__icon">🦷</div>
-          <h3 data-en="Dental Care" data-es="Cuidado Dental">Dental Care</h3>
-          <p data-en="Professional cleaning, extractions, and oral health assessments under safe anesthesia." data-es="Limpieza profesional, extracciones y evaluación de salud oral bajo anestesia segura.">Professional cleaning, extractions, and oral health assessments under safe anesthesia.</p>
-          <span class="service-card__price" data-en="From $60 USD" data-es="Desde $60 USD">From $60 USD</span>
+          <div class="service-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1548802673-380ab8ebc7b7?w=600&h=380&fit=crop&q=80"
+                 alt="Cat dental care" class="service-card__img" />
+            <span class="service-card__color-bar"></span>
+          </div>
+          <div class="service-card__body">
+            <h3 data-en="Dental Care" data-es="Cuidado Dental">Dental Care</h3>
+            <p data-en="Professional cleaning, extractions, and oral health assessments under safe anesthesia." data-es="Limpieza profesional, extracciones y evaluación de salud oral bajo anestesia segura.">Professional cleaning, extractions, and oral health assessments under safe anesthesia.</p>
+            <span class="service-card__price" data-en="From $60 USD" data-es="Desde $60 USD">From $60 USD</span>
+          </div>
         </div>
 
+        <!-- 6. Pharmacy — dog -->
         <div class="service-card service-card--coral">
-          <div class="service-card__icon">💊</div>
-          <h3 data-en="Pharmacy" data-es="Farmacia">Pharmacy</h3>
-          <p data-en="Full in-clinic pharmacy with US-equivalent medications at significantly reduced prices." data-es="Farmacia completa con medicamentos equivalentes a EE.UU. a precios significativamente reducidos.">Full in-clinic pharmacy with US-equivalent medications at significantly reduced prices.</p>
-          <span class="service-card__price" data-en="Up to 70% savings" data-es="Hasta 70% de ahorro">Up to 70% savings</span>
+          <div class="service-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&h=380&fit=crop&q=80"
+                 alt="Happy dog at pharmacy" class="service-card__img" />
+            <span class="service-card__color-bar"></span>
+          </div>
+          <div class="service-card__body">
+            <h3 data-en="Pharmacy" data-es="Farmacia">Pharmacy</h3>
+            <p data-en="Full in-clinic pharmacy with US-equivalent medications at significantly reduced prices." data-es="Farmacia completa con medicamentos equivalentes a EE.UU. a precios significativamente reducidos.">Full in-clinic pharmacy with US-equivalent medications at significantly reduced prices.</p>
+            <span class="service-card__price" data-en="Up to 70% savings" data-es="Hasta 70% de ahorro">Up to 70% savings</span>
+          </div>
         </div>
-      </div>
+
+        <!-- 7. Emergency Care — cat -->
+        <div class="service-card service-card--pink">
+          <div class="service-card__img-wrap">
+            <img src="https://images.unsplash.com/photo-1573865526739-10659fec78a5?w=600&h=380&fit=crop&q=80"
+                 alt="Cat emergency care" class="service-card__img" />
+            <span class="service-card__color-bar"></span>
+          </div>
+          <div class="service-card__body">
+            <h3 data-en="Emergency Care" data-es="Cuidado de Emergencia">Emergency Care</h3>
+            <p data-en="Urgent same-day care for trauma, poisoning, and acute illness. Our ER team is ready when your pet needs it most." data-es="Atención urgente el mismo día para traumatismos, intoxicaciones y enfermedades agudas. Nuestro equipo de emergencias está listo cuando tu mascota más lo necesita.">Urgent same-day care for trauma, poisoning, and acute illness. Our ER team is ready when your pet needs it most.</p>
+            <span class="service-card__price" data-en="From $45 USD" data-es="Desde $45 USD">From $45 USD</span>
+          </div>
+        </div>
+
+      </div><!-- /.services__track -->
+
+      <!-- Scroll arrows -->
+      <button class="services__arrow services__arrow--prev" id="servicesPrev" aria-label="Scroll left">&#8592;</button>
+      <button class="services__arrow services__arrow--next" id="servicesNext" aria-label="Scroll right">&#8594;</button>
+
+      <!-- Drag hint -->
+      <p class="services__hint" data-en="← Scroll or drag to explore →" data-es="← Desplázate o arrastra para explorar →">← Scroll or drag to explore →</p>
     </div>
   </section>
 
