@@ -604,6 +604,181 @@ section { padding: 80px 0; }
 .stat-lbl { display: block; font-size: 0.75rem; font-weight: 600; opacity: 0.9; margin-top: 4px; }
 
 /* ============================================================
+   ABOUT — updated team preview chips
+   ============================================================ */
+.about__team-previews {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  margin-top: 28px;
+}
+.about-vet-chip {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+}
+.about-vet-chip img {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 2px solid var(--border);
+  flex-shrink: 0;
+}
+.about-vet-chip strong { display: block; font-size: 0.95rem; color: var(--dark); }
+.about-vet-chip small  { font-size: 0.8rem; color: var(--muted); }
+.about__team-cta { margin-top: 24px; }
+
+/* ============================================================
+   TEAM SECTION
+   ============================================================ */
+.team {
+  background: var(--bg);
+  overflow: hidden;
+}
+
+/* Section header reveal */
+.team-header {
+  opacity: 0;
+  transform: translateY(32px);
+  transition: opacity 0.7s ease, transform 0.7s ease;
+}
+.team-header.is-visible {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+.team__grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* ---- Vet Card ---- */
+.vet-card {
+  background: #fff;
+  border-radius: var(--radius-lg);
+  overflow: hidden;
+  border: 1px solid var(--border);
+  box-shadow: var(--shadow);
+  display: flex;
+  flex-direction: column;
+
+  /* initial hidden state — JS will trigger animation */
+  opacity: 0;
+  transform: translateY(48px) scale(0.97);
+  transition: opacity 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+              transform 0.65s cubic-bezier(0.22, 1, 0.36, 1),
+              box-shadow 0.25s ease;
+}
+.vet-card.is-visible {
+  opacity: 1;
+  transform: translateY(0) scale(1);
+}
+.vet-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-6px) scale(1);
+}
+
+/* Photo */
+.vet-card__photo-wrap {
+  position: relative;
+  overflow: hidden;
+  aspect-ratio: 4 / 4.2;
+}
+.vet-card__photo {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: top center;
+  transition: transform 0.55s ease;
+}
+.vet-card:hover .vet-card__photo {
+  transform: scale(1.06);
+}
+
+/* Founder badge */
+.vet-card__badge {
+  position: absolute;
+  top: 14px;
+  left: 14px;
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 4px 12px;
+  border-radius: 50px;
+  color: #fff;
+}
+.vet-card__badge--founder {
+  background: linear-gradient(135deg, var(--pink) 0%, #d4003e 100%);
+  box-shadow: 0 4px 12px rgba(255,61,107,0.4);
+}
+
+/* Accent bar */
+.vet-card__photo-wrap::after {
+  content: '';
+  position: absolute;
+  bottom: 0; left: 0; right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, var(--pink) 0%, var(--blue) 50%, var(--green) 100%);
+}
+
+/* Body */
+.vet-card__body {
+  padding: 20px 22px 24px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  flex: 1;
+}
+.vet-card__body h3 {
+  font-size: 1.08rem;
+  color: var(--dark);
+  line-height: 1.2;
+  margin: 0;
+}
+.vet-card__title {
+  font-size: 0.82rem;
+  font-weight: 700;
+  color: var(--pink);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+.vet-card__creds {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+}
+.cred-pill {
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: var(--blue-light);
+  color: var(--blue);
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+.vet-card__bio {
+  font-size: 0.87rem;
+  color: var(--muted);
+  line-height: 1.65;
+  flex: 1;
+}
+.vet-card__langs {
+  display: flex;
+  gap: 6px;
+  margin-top: 4px;
+}
+.lang-tag {
+  font-size: 0.72rem;
+  font-weight: 700;
+  background: var(--green-light);
+  color: var(--green);
+  padding: 3px 10px;
+  border-radius: 50px;
+}
+
+/* ============================================================
    TESTIMONIALS
    ============================================================ */
 .testimonials {
@@ -897,6 +1072,7 @@ section { padding: 80px 0; }
    ============================================================ */
 @media (max-width: 1024px) {
   .services__grid { grid-template-columns: repeat(2, 1fr); }
+  .team__grid     { grid-template-columns: repeat(2, 1fr); }
   .footer__inner  { grid-template-columns: 1fr 1fr; }
 }
 
@@ -939,6 +1115,7 @@ section { padding: 80px 0; }
 
   /* Grids */
   .services__grid    { grid-template-columns: 1fr; }
+  .team__grid        { grid-template-columns: 1fr; }
   .why-us__inner     { grid-template-columns: 1fr; }
   .about__inner      { grid-template-columns: 1fr; }
   .testimonials__grid{ grid-template-columns: 1fr; }
