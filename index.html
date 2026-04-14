@@ -1,0 +1,576 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-en="PawCare Tijuana | Affordable Veterinary Care" data-es="PawCare Tijuana | Atención Veterinaria Accesible">PawCare Tijuana | Affordable Veterinary Care</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800;900&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet" />
+</head>
+<body>
+
+  <!-- ===== NAVBAR ===== -->
+  <header class="navbar">
+    <div class="container navbar__inner">
+      <a href="#" class="navbar__logo">
+        <span class="logo-paw">🐾</span>
+        <span class="logo-text">PawCare <span class="logo-accent">Tijuana</span></span>
+      </a>
+
+      <nav class="navbar__links" id="navLinks">
+        <a href="#services"   data-en="Services"      data-es="Servicios">Services</a>
+        <a href="#why-us"     data-en="Why Us"         data-es="¿Por qué nosotros?">Why Us</a>
+        <a href="#about"      data-en="About Us"       data-es="Nosotros">About Us</a>
+        <a href="#pricing"    data-en="Pricing"        data-es="Precios">Pricing</a>
+        <a href="#contact"    data-en="Contact"        data-es="Contacto">Contact</a>
+      </nav>
+
+      <div class="navbar__actions">
+        <!-- Language Toggle -->
+        <div class="lang-toggle" id="langToggle" role="button" aria-label="Toggle language" tabindex="0">
+          <span class="lang-option" id="langEN">EN</span>
+          <span class="lang-divider">|</span>
+          <span class="lang-option" id="langES">ES</span>
+        </div>
+
+        <a href="#contact" class="btn btn--primary nav-cta" data-en="Book Appointment" data-es="Reservar Cita">Book Appointment</a>
+
+        <button class="hamburger" id="hamburger" aria-label="Toggle menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="home">
+    <div class="container hero__inner">
+      <div class="hero__text">
+        <div class="hero__badge">
+          <span data-en="🇲🇽 Based in Tijuana, B.C." data-es="🇲🇽 En Tijuana, B.C.">🇲🇽 Based in Tijuana, B.C.</span>
+        </div>
+        <h1 class="hero__title">
+          <span data-en="Where Your Pet" data-es="Donde Tu Mascota">Where Your Pet</span>
+          <span class="hero__title--accent" data-en="Feels Right" data-es="Se Siente">Feels Right</span>
+          <span data-en="at Home" data-es="Como en Casa">at Home</span>
+        </h1>
+        <p class="hero__subtitle" data-en="Premium veterinary care just minutes from the US border — at a fraction of the cost. Your pet deserves the best, and we deliver it without breaking the bank." data-es="Atención veterinaria de primer nivel a minutos de la frontera con EE.UU., a una fracción del costo. Tu mascota merece lo mejor, y nosotros lo hacemos sin arruinar tu bolsillo.">
+          Premium veterinary care just minutes from the US border — at a fraction of the cost. Your pet deserves the best, and we deliver it without breaking the bank.
+        </p>
+        <div class="hero__ctas">
+          <a href="#contact" class="btn btn--primary btn--lg" data-en="Book an Appointment" data-es="Reservar una Cita">Book an Appointment</a>
+          <a href="#why-us"  class="btn btn--outline btn--lg" data-en="See Why We're Different" data-es="Por qué somos diferentes">See Why We're Different</a>
+        </div>
+        <div class="hero__stats">
+          <div class="hero__stat">
+            <span class="stat-number">5,000+</span>
+            <span class="stat-label" data-en="Pets Treated" data-es="Mascotas Atendidas">Pets Treated</span>
+          </div>
+          <div class="hero__stat">
+            <span class="stat-number">15+</span>
+            <span class="stat-label" data-en="Years Experience" data-es="Años de Experiencia">Years Experience</span>
+          </div>
+          <div class="hero__stat">
+            <span class="stat-number">60%</span>
+            <span class="stat-label" data-en="Less Than US Prices" data-es="Menos que en EE.UU.">Less Than US Prices</span>
+          </div>
+        </div>
+      </div>
+      <div class="hero__image">
+        <div class="hero__img-blob">
+          <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=600&q=80" alt="Happy dog at vet clinic" />
+        </div>
+        <div class="hero__floating-card hero__floating-card--1">
+          <span class="card-icon">⭐</span>
+          <div>
+            <strong data-en="Trusted Care" data-es="Cuidado de Confianza">Trusted Care</strong>
+            <small data-en="500+ 5-star reviews" data-es="500+ reseñas de 5 estrellas">500+ 5-star reviews</small>
+          </div>
+        </div>
+        <div class="hero__floating-card hero__floating-card--2">
+          <span class="card-icon">💉</span>
+          <div>
+            <strong data-en="US-Trained Vets" data-es="Vets Entrenados en EE.UU.">US-Trained Vets</strong>
+            <small data-en="Bilingual staff" data-es="Personal bilingüe">Bilingual staff</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="hero__wave">
+      <svg viewBox="0 0 1440 80" preserveAspectRatio="none"><path d="M0,40 C360,80 1080,0 1440,40 L1440,80 L0,80 Z" fill="#fff"/></svg>
+    </div>
+  </section>
+
+  <!-- ===== VALUE BANNER ===== -->
+  <section class="value-banner">
+    <div class="container value-banner__inner">
+      <div class="value-item">
+        <span class="value-icon">🏥</span>
+        <span data-en="Modern Facility" data-es="Instalaciones Modernas">Modern Facility</span>
+      </div>
+      <div class="value-item">
+        <span class="value-icon">🌎</span>
+        <span data-en="English & Spanish" data-es="Inglés y Español">English & Spanish</span>
+      </div>
+      <div class="value-item">
+        <span class="value-icon">💲</span>
+        <span data-en="Affordable Pricing" data-es="Precios Accesibles">Affordable Pricing</span>
+      </div>
+      <div class="value-item">
+        <span class="value-icon">📍</span>
+        <span data-en="Minutes from the Border" data-es="A minutos de la frontera">Minutes from the Border</span>
+      </div>
+      <div class="value-item">
+        <span class="value-icon">🕐</span>
+        <span data-en="Same-Day Appointments" data-es="Citas el mismo día">Same-Day Appointments</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES ===== -->
+  <section class="services" id="services">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="What We Offer" data-es="Lo que ofrecemos">What We Offer</span>
+        <h2 data-en="Complete Care for Every Pet" data-es="Cuidado Completo para Cada Mascota">Complete Care for Every Pet</h2>
+        <p data-en="From routine checkups to complex surgeries — we've got your furry family member covered." data-es="Desde revisiones de rutina hasta cirugías complejas, cubrimos a tu peludo familiar.">From routine checkups to complex surgeries — we've got your furry family member covered.</p>
+      </div>
+
+      <div class="services__grid">
+        <div class="service-card service-card--pink">
+          <div class="service-card__icon">🩺</div>
+          <h3 data-en="Wellness Exams" data-es="Exámenes de Bienestar">Wellness Exams</h3>
+          <p data-en="Annual and bi-annual checkups to keep your pet in peak health. Full nose-to-tail evaluations." data-es="Revisiones anuales y semianuales para mantener a tu mascota en su mejor estado de salud.">Annual and bi-annual checkups to keep your pet in peak health. Full nose-to-tail evaluations.</p>
+          <span class="service-card__price" data-en="From $25 USD" data-es="Desde $25 USD">From $25 USD</span>
+        </div>
+
+        <div class="service-card service-card--blue">
+          <div class="service-card__icon">💉</div>
+          <h3 data-en="Vaccinations" data-es="Vacunaciones">Vaccinations</h3>
+          <p data-en="Core and non-core vaccines for dogs and cats. US-standard protocols at Mexican prices." data-es="Vacunas básicas y adicionales para perros y gatos. Protocolos al estándar de EE.UU. a precios mexicanos.">Core and non-core vaccines for dogs and cats. US-standard protocols at Mexican prices.</p>
+          <span class="service-card__price" data-en="From $15 USD" data-es="Desde $15 USD">From $15 USD</span>
+        </div>
+
+        <div class="service-card service-card--green">
+          <div class="service-card__icon">🔬</div>
+          <h3 data-en="Diagnostics & Lab" data-es="Diagnósticos y Laboratorio">Diagnostics & Lab</h3>
+          <p data-en="In-house bloodwork, urinalysis, X-rays, and ultrasounds with fast turnaround results." data-es="Análisis de sangre, orina, radiografías y ultrasonidos internos con resultados rápidos.">In-house bloodwork, urinalysis, X-rays, and ultrasounds with fast turnaround results.</p>
+          <span class="service-card__price" data-en="From $30 USD" data-es="Desde $30 USD">From $30 USD</span>
+        </div>
+
+        <div class="service-card service-card--yellow">
+          <div class="service-card__icon">🔪</div>
+          <h3 data-en="Surgery" data-es="Cirugía">Surgery</h3>
+          <p data-en="Spay/neuter, soft tissue, and orthopedic procedures. Board-certified surgeons, full anesthesia monitoring." data-es="Esterilizaciones, tejidos blandos y procedimientos ortopédicos. Cirujanos certificados, monitoreo total.">Spay/neuter, soft tissue, and orthopedic procedures. Board-certified surgeons, full anesthesia monitoring.</p>
+          <span class="service-card__price" data-en="From $80 USD" data-es="Desde $80 USD">From $80 USD</span>
+        </div>
+
+        <div class="service-card service-card--purple">
+          <div class="service-card__icon">🦷</div>
+          <h3 data-en="Dental Care" data-es="Cuidado Dental">Dental Care</h3>
+          <p data-en="Professional cleaning, extractions, and oral health assessments under safe anesthesia." data-es="Limpieza profesional, extracciones y evaluación de salud oral bajo anestesia segura.">Professional cleaning, extractions, and oral health assessments under safe anesthesia.</p>
+          <span class="service-card__price" data-en="From $60 USD" data-es="Desde $60 USD">From $60 USD</span>
+        </div>
+
+        <div class="service-card service-card--coral">
+          <div class="service-card__icon">💊</div>
+          <h3 data-en="Pharmacy" data-es="Farmacia">Pharmacy</h3>
+          <p data-en="Full in-clinic pharmacy with US-equivalent medications at significantly reduced prices." data-es="Farmacia completa con medicamentos equivalentes a EE.UU. a precios significativamente reducidos.">Full in-clinic pharmacy with US-equivalent medications at significantly reduced prices.</p>
+          <span class="service-card__price" data-en="Up to 70% savings" data-es="Hasta 70% de ahorro">Up to 70% savings</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== WHY US ===== -->
+  <section class="why-us" id="why-us">
+    <div class="container why-us__inner">
+      <div class="why-us__image">
+        <img src="https://images.unsplash.com/photo-1548199973-03cce0bbc87b?w=600&q=80" alt="Happy dogs running" />
+        <div class="why-us__image-badge">
+          <span class="badge-number">60%</span>
+          <span class="badge-text" data-en="Average savings vs. US clinics" data-es="Ahorro promedio vs. clínicas en EE.UU.">Average savings vs. US clinics</span>
+        </div>
+      </div>
+      <div class="why-us__content">
+        <span class="section-tag" data-en="Why Choose Us" data-es="¿Por qué elegirnos?">Why Choose Us</span>
+        <h2 data-en="World-Class Care, Border-Crossing Value" data-es="Atención de Clase Mundial, Valor al Cruzar la Frontera">World-Class Care, Border-Crossing Value</h2>
+        <p data-en="Just 20 minutes south of San Diego, PawCare Tijuana offers the same quality of veterinary medicine you expect in the US — with a price tag that lets you breathe easy." data-es="A solo 20 minutos al sur de San Diego, PawCare Tijuana ofrece la misma calidad de medicina veterinaria que esperas en EE.UU., con precios que te dejan respirar tranquilo.">
+          Just 20 minutes south of San Diego, PawCare Tijuana offers the same quality of veterinary medicine you expect in the US — with a price tag that lets you breathe easy.
+        </p>
+        <ul class="why-us__list">
+          <li>
+            <span class="list-icon">✅</span>
+            <div>
+              <strong data-en="US & Mexican Certified Veterinarians" data-es="Veterinarios certificados en EE.UU. y México">US & Mexican Certified Veterinarians</strong>
+              <span data-en="Our vets hold credentials recognized on both sides of the border." data-es="Nuestros veterinarios tienen credenciales reconocidas en ambos lados de la frontera.">Our vets hold credentials recognized on both sides of the border.</span>
+            </div>
+          </li>
+          <li>
+            <span class="list-icon">✅</span>
+            <div>
+              <strong data-en="Fully Bilingual Team" data-es="Equipo completamente bilingüe">Fully Bilingual Team</strong>
+              <span data-en="Every team member speaks English and Spanish fluently — no confusion, no barriers." data-es="Cada miembro del equipo habla inglés y español con fluidez, sin confusión ni barreras.">Every team member speaks English and Spanish fluently — no confusion, no barriers.</span>
+            </div>
+          </li>
+          <li>
+            <span class="list-icon">✅</span>
+            <div>
+              <strong data-en="State-of-the-Art Equipment" data-es="Equipo de última generación">State-of-the-Art Equipment</strong>
+              <span data-en="Digital X-rays, ultrasound, in-house lab, and modern surgical suites." data-es="Rayos X digitales, ultrasonido, laboratorio interno y quirófanos modernos.">Digital X-rays, ultrasound, in-house lab, and modern surgical suites.</span>
+            </div>
+          </li>
+          <li>
+            <span class="list-icon">✅</span>
+            <div>
+              <strong data-en="Transparent, All-Inclusive Pricing" data-es="Precios transparentes y todo incluido">Transparent, All-Inclusive Pricing</strong>
+              <span data-en="No surprise bills. You'll always know the full cost before any procedure." data-es="Sin facturas sorpresa. Siempre sabrás el costo total antes de cualquier procedimiento.">No surprise bills. You'll always know the full cost before any procedure.</span>
+            </div>
+          </li>
+          <li>
+            <span class="list-icon">✅</span>
+            <div>
+              <strong data-en="Easy Border Access" data-es="Fácil acceso fronterizo">Easy Border Access</strong>
+              <span data-en="Located near the Otay Mesa crossing with ample parking and cross-border shuttle info available." data-es="Ubicados cerca del cruce de Otay Mesa con amplio estacionamiento e información de transporte fronterizo.">Located near the Otay Mesa crossing with ample parking and cross-border shuttle info available.</span>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PRICE COMPARISON ===== -->
+  <section class="pricing" id="pricing">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="Price Comparison" data-es="Comparación de Precios">Price Comparison</span>
+        <h2 data-en="See the Difference for Yourself" data-es="Comprueba la diferencia tú mismo">See the Difference for Yourself</h2>
+        <p data-en="Same treatment, same quality, dramatically different price. Why pay more when the border is just minutes away?" data-es="Mismo tratamiento, misma calidad, precio dramáticamente diferente. ¿Por qué pagar más cuando la frontera está a minutos?">Same treatment, same quality, dramatically different price. Why pay more when the border is just minutes away?</p>
+      </div>
+
+      <div class="pricing__table-wrap">
+        <table class="pricing__table">
+          <thead>
+            <tr>
+              <th data-en="Procedure" data-es="Procedimiento">Procedure</th>
+              <th class="col-us">
+                <span>🇺🇸</span>
+                <span data-en="US Average" data-es="Promedio EE.UU.">US Average</span>
+              </th>
+              <th class="col-us col-pawcare">
+                <span>🐾</span>
+                <span data-en="PawCare Tijuana" data-es="PawCare Tijuana">PawCare Tijuana</span>
+              </th>
+              <th class="col-savings" data-en="Your Savings" data-es="Tu Ahorro">Your Savings</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td data-en="Annual Wellness Exam" data-es="Examen anual de bienestar">Annual Wellness Exam</td>
+              <td class="col-us">$80–$120</td>
+              <td class="col-pawcare">$25–$40</td>
+              <td class="col-savings savings-pill">~65%</td>
+            </tr>
+            <tr>
+              <td data-en="Spay / Neuter (Dog)" data-es="Esterilización (Perro)">Spay / Neuter (Dog)</td>
+              <td class="col-us">$300–$500</td>
+              <td class="col-pawcare">$80–$150</td>
+              <td class="col-savings savings-pill">~68%</td>
+            </tr>
+            <tr>
+              <td data-en="Dental Cleaning" data-es="Limpieza Dental">Dental Cleaning</td>
+              <td class="col-us">$400–$700</td>
+              <td class="col-pawcare">$80–$180</td>
+              <td class="col-savings savings-pill">~73%</td>
+            </tr>
+            <tr>
+              <td data-en="X-Ray (per view)" data-es="Radiografía (por toma)">X-Ray (per view)</td>
+              <td class="col-us">$150–$250</td>
+              <td class="col-pawcare">$35–$60</td>
+              <td class="col-savings savings-pill">~75%</td>
+            </tr>
+            <tr>
+              <td data-en="Full Bloodwork Panel" data-es="Panel Completo de Sangre">Full Bloodwork Panel</td>
+              <td class="col-us">$200–$350</td>
+              <td class="col-pawcare">$50–$90</td>
+              <td class="col-savings savings-pill">~72%</td>
+            </tr>
+            <tr>
+              <td data-en="Vaccination (per vaccine)" data-es="Vacuna (por vacuna)">Vaccination (per vaccine)</td>
+              <td class="col-us">$25–$50</td>
+              <td class="col-pawcare">$8–$18</td>
+              <td class="col-savings savings-pill">~62%</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <p class="pricing__disclaimer" data-en="* Prices are estimates in USD. Final pricing provided at consultation. US averages based on national surveys." data-es="* Los precios son estimaciones en USD. El precio final se proporciona en la consulta. Los promedios de EE.UU. están basados en encuestas nacionales.">* Prices are estimates in USD. Final pricing provided at consultation. US averages based on national surveys.</p>
+    </div>
+  </section>
+
+  <!-- ===== ABOUT US ===== -->
+  <section class="about" id="about">
+    <div class="container about__inner">
+      <div class="about__content">
+        <span class="section-tag" data-en="About Us" data-es="Sobre Nosotros">About Us</span>
+        <h2 data-en="A Family Clinic Built on Trust" data-es="Una Clínica Familiar Construida sobre la Confianza">A Family Clinic Built on Trust</h2>
+        <p data-en="Founded in 2009, PawCare Tijuana was born from a simple belief: pets on both sides of the border deserve excellent medical care at a price their families can afford. Our founder, Dr. Elena Ramírez, completed her veterinary training at UC Davis and returned to Tijuana with a mission to bring that standard of care home." data-es="Fundada en 2009, PawCare Tijuana nació de una simple creencia: las mascotas a ambos lados de la frontera merecen atención médica excelente a un precio que sus familias puedan costear. Nuestra fundadora, la Dra. Elena Ramírez, completó su formación veterinaria en UC Davis y regresó a Tijuana con la misión de traer ese estándar de atención a casa.">
+          Founded in 2009, PawCare Tijuana was born from a simple belief: pets on both sides of the border deserve excellent medical care at a price their families can afford. Our founder, Dr. Elena Ramírez, completed her veterinary training at UC Davis and returned to Tijuana with a mission to bring that standard of care home.
+        </p>
+        <p data-en="Today our team of 8 veterinarians and 20+ support staff serve pet owners from San Diego, Chula Vista, National City, and throughout Baja California. We are proud to bridge two communities with compassion, science, and a love for animals." data-es="Hoy nuestro equipo de 8 veterinarios y más de 20 asistentes atiende a dueños de mascotas de San Diego, Chula Vista, National City y toda Baja California. Estamos orgullosos de unir dos comunidades con compasión, ciencia y amor por los animales.">
+          Today our team of 8 veterinarians and 20+ support staff serve pet owners from San Diego, Chula Vista, National City, and throughout Baja California. We are proud to bridge two communities with compassion, science, and a love for animals.
+        </p>
+        <div class="about__team">
+          <div class="team-member">
+            <div class="team-member__avatar team-member__avatar--1">DR</div>
+            <div>
+              <strong>Dr. Elena Ramírez</strong>
+              <small data-en="Founder & Chief Veterinarian" data-es="Fundadora y Veterinaria Jefe">Founder & Chief Veterinarian</small>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="team-member__avatar team-member__avatar--2">DC</div>
+            <div>
+              <strong>Dr. Carlos Mendoza</strong>
+              <small data-en="Surgeon & Specialist" data-es="Cirujano y Especialista">Surgeon & Specialist</small>
+            </div>
+          </div>
+          <div class="team-member">
+            <div class="team-member__avatar team-member__avatar--3">DL</div>
+            <div>
+              <strong>Dr. Laura Chen</strong>
+              <small data-en="Internal Medicine" data-es="Medicina Interna">Internal Medicine</small>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="about__images">
+        <img class="about__img about__img--main" src="https://images.unsplash.com/photo-1576201836106-db1758fd1c97?w=500&q=80" alt="Vet examining a cat" />
+        <img class="about__img about__img--secondary" src="https://images.unsplash.com/photo-1583337130417-3346a1be7dee?w=300&q=80" alt="Happy puppy" />
+        <div class="about__stat-card">
+          <span class="stat-num">98%</span>
+          <span class="stat-lbl" data-en="Client Satisfaction" data-es="Satisfacción del Cliente">Client Satisfaction</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TESTIMONIALS ===== -->
+  <section class="testimonials">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-tag" data-en="Reviews" data-es="Reseñas">Reviews</span>
+        <h2 data-en="What Our Clients Say" data-es="Lo que dicen nuestros clientes">What Our Clients Say</h2>
+      </div>
+      <div class="testimonials__grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p data-en="&quot;I was paying $400 for my dog's dental cleaning in San Diego. PawCare did it for $120 with the same quality. I've been coming here every year since.&quot;" data-es="&quot;Pagaba $400 por la limpieza dental de mi perro en San Diego. PawCare lo hizo por $120 con la misma calidad. Vengo aquí cada año desde entonces.&quot;">"I was paying $400 for my dog's dental cleaning in San Diego. PawCare did it for $120 with the same quality. I've been coming here every year since."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar ta--1">SM</div>
+            <div>
+              <strong>Sarah M.</strong>
+              <small>Chula Vista, CA</small>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p data-en="&quot;Dr. Ramírez is absolutely wonderful. She explained everything in English and made my cat feel calm. The facility is spotless and modern.&quot;" data-es="&quot;La Dra. Ramírez es absolutamente maravillosa. Explicó todo en inglés y hizo que mi gato se sintiera tranquilo. Las instalaciones están impecables y son modernas.&quot;">"Dr. Ramírez is absolutely wonderful. She explained everything in English and made my cat feel calm. The facility is spotless and modern."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar ta--2">JL</div>
+            <div>
+              <strong>James L.</strong>
+              <small>San Diego, CA</small>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p data-en="&quot;My golden retriever needed surgery and I couldn't afford it in the US. PawCare gave him the care he needed at a price I could actually pay. He's 100% now!&quot;" data-es="&quot;Mi golden retriever necesitaba cirugía y no podía pagarla en EE.UU. PawCare le dio la atención que necesitaba a un precio que realmente podía pagar. ¡Está 100% bien ahora!&quot;">"My golden retriever needed surgery and I couldn't afford it in the US. PawCare gave him the care he needed at a price I could actually pay. He's 100% now!"</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar ta--3">MR</div>
+            <div>
+              <strong>Maria R.</strong>
+              <small>National City, CA</small>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p data-en="&quot;Como residente de Tijuana, me da orgullo tener esta clínica en mi ciudad. El nivel de atención es de primer mundo y los precios son justos para todos.&quot;" data-es="&quot;Como residente de Tijuana, me da orgullo tener esta clínica en mi ciudad. El nivel de atención es de primer mundo y los precios son justos para todos.&quot;">"Como residente de Tijuana, me da orgullo tener esta clínica en mi ciudad. El nivel de atención es de primer mundo y los precios son justos para todos."</p>
+          <div class="testimonial-author">
+            <div class="testimonial-avatar ta--4">AG</div>
+            <div>
+              <strong>Alejandro G.</strong>
+              <small>Tijuana, B.C.</small>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== HOW TO GET HERE ===== -->
+  <section class="directions">
+    <div class="container directions__inner">
+      <div class="directions__content">
+        <span class="section-tag" data-en="Getting Here" data-es="Cómo llegar">Getting Here</span>
+        <h2 data-en="Just Minutes from the US Border" data-es="A minutos de la frontera con EE.UU.">Just Minutes from the US Border</h2>
+        <p data-en="Cross at the Otay Mesa Port of Entry (SR-905) and we're a 10-minute drive away. Parking is free and plentiful. SENTRI and Ready Lanes accepted." data-es="Cruza por el puerto de entrada de Otay Mesa (SR-905) y estamos a 10 minutos en coche. Estacionamiento gratuito y amplio. Se aceptan carriles SENTRI y Ready.">
+          Cross at the Otay Mesa Port of Entry (SR-905) and we're a 10-minute drive away. Parking is free and plentiful. SENTRI and Ready Lanes accepted.
+        </p>
+        <div class="directions__details">
+          <div class="detail-item">
+            <span class="detail-icon">📍</span>
+            <div>
+              <strong data-en="Address" data-es="Dirección">Address</strong>
+              <span>Blvd. Diaz Ordaz 12450, Col. El Paraíso, Tijuana, B.C. 22106</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">📞</span>
+            <div>
+              <strong data-en="Phone (US-friendly)" data-es="Teléfono (disponible en EE.UU.)">Phone (US-friendly)</strong>
+              <span>+1 (619) 555-0147</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">🕐</span>
+            <div>
+              <strong data-en="Hours" data-es="Horario">Hours</strong>
+              <span data-en="Mon–Sat 8:00 AM – 7:00 PM | Sun 9:00 AM – 3:00 PM" data-es="Lun–Sáb 8:00 AM – 7:00 PM | Dom 9:00 AM – 3:00 PM">Mon–Sat 8:00 AM – 7:00 PM | Sun 9:00 AM – 3:00 PM</span>
+            </div>
+          </div>
+          <div class="detail-item">
+            <span class="detail-icon">✉️</span>
+            <div>
+              <strong data-en="Email" data-es="Correo electrónico">Email</strong>
+              <span>hello@pawcaretijuana.com</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="directions__map">
+        <div class="map-placeholder">
+          <div class="map-placeholder__inner">
+            <span class="map-icon">🗺️</span>
+            <p data-en="Tijuana, Baja California" data-es="Tijuana, Baja California">Tijuana, Baja California</p>
+            <p><small data-en="Near Otay Mesa Border Crossing" data-es="Cerca del Cruce Fronterizo de Otay Mesa">Near Otay Mesa Border Crossing</small></p>
+            <a href="https://maps.google.com/?q=Tijuana+Baja+California+Veterinary" target="_blank" class="btn btn--outline btn--sm" data-en="Open in Google Maps" data-es="Abrir en Google Maps">Open in Google Maps</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT / CTA ===== -->
+  <section class="contact" id="contact">
+    <div class="container contact__inner">
+      <div class="contact__cta">
+        <h2 data-en="Ready to Give Your Pet the Care They Deserve?" data-es="¿Listo para darle a tu mascota la atención que merece?">Ready to Give Your Pet the Care They Deserve?</h2>
+        <p data-en="Book an appointment online or give us a call. Walk-ins welcome. Same-day appointments usually available." data-es="Reserva una cita en línea o llámanos. Se aceptan sin cita previa. Citas el mismo día generalmente disponibles.">
+          Book an appointment online or give us a call. Walk-ins welcome. Same-day appointments usually available.
+        </p>
+      </div>
+      <form class="contact__form" id="contactForm" novalidate>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="ownerName" data-en="Your Name" data-es="Tu Nombre">Your Name</label>
+            <input type="text" id="ownerName" name="ownerName" placeholder="John Smith" required />
+          </div>
+          <div class="form-group">
+            <label for="phone" data-en="Phone / WhatsApp" data-es="Teléfono / WhatsApp">Phone / WhatsApp</label>
+            <input type="tel" id="phone" name="phone" placeholder="+1 (619) 555-0000" />
+          </div>
+        </div>
+        <div class="form-row">
+          <div class="form-group">
+            <label for="email" data-en="Email Address" data-es="Correo Electrónico">Email Address</label>
+            <input type="email" id="email" name="email" placeholder="you@example.com" required />
+          </div>
+          <div class="form-group">
+            <label for="petName" data-en="Pet's Name & Species" data-es="Nombre y Especie de tu Mascota">Pet's Name & Species</label>
+            <input type="text" id="petName" name="petName" placeholder="Buddy (Dog)" />
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="service" data-en="Service Needed" data-es="Servicio Requerido">Service Needed</label>
+          <select id="service" name="service">
+            <option value="" data-en="Select a service..." data-es="Selecciona un servicio...">Select a service...</option>
+            <option value="wellness" data-en="Wellness Exam" data-es="Examen de Bienestar">Wellness Exam</option>
+            <option value="vaccines" data-en="Vaccinations" data-es="Vacunaciones">Vaccinations</option>
+            <option value="surgery" data-en="Surgery" data-es="Cirugía">Surgery</option>
+            <option value="dental" data-en="Dental Cleaning" data-es="Limpieza Dental">Dental Cleaning</option>
+            <option value="diagnostics" data-en="Diagnostics / Lab" data-es="Diagnósticos / Laboratorio">Diagnostics / Lab</option>
+            <option value="pharmacy" data-en="Pharmacy / Medications" data-es="Farmacia / Medicamentos">Pharmacy / Medications</option>
+            <option value="other" data-en="Other" data-es="Otro">Other</option>
+          </select>
+        </div>
+        <div class="form-group">
+          <label for="message" data-en="Tell us about your pet" data-es="Cuéntanos sobre tu mascota">Tell us about your pet</label>
+          <textarea id="message" name="message" rows="4" placeholder="Any concerns, symptoms, or questions..."></textarea>
+        </div>
+        <button type="submit" class="btn btn--primary btn--full" data-en="Send Appointment Request" data-es="Enviar Solicitud de Cita">Send Appointment Request</button>
+        <div class="form-success" id="formSuccess">
+          <span data-en="✅ Thank you! We'll be in touch within 24 hours." data-es="✅ ¡Gracias! Nos comunicaremos contigo en menos de 24 horas.">✅ Thank you! We'll be in touch within 24 hours.</span>
+        </div>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__brand">
+        <a href="#" class="navbar__logo">
+          <span class="logo-paw">🐾</span>
+          <span class="logo-text">PawCare <span class="logo-accent">Tijuana</span></span>
+        </a>
+        <p data-en="Bridging the border, one pet at a time. Premium veterinary care in Tijuana, serving San Diego and beyond." data-es="Uniendo la frontera, una mascota a la vez. Atención veterinaria premium en Tijuana, al servicio de San Diego y más allá.">
+          Bridging the border, one pet at a time. Premium veterinary care in Tijuana, serving San Diego and beyond.
+        </p>
+        <div class="footer__social">
+          <a href="#" aria-label="Facebook">📘</a>
+          <a href="#" aria-label="Instagram">📸</a>
+          <a href="#" aria-label="WhatsApp">💬</a>
+          <a href="#" aria-label="Yelp">⭐</a>
+        </div>
+      </div>
+      <div class="footer__links">
+        <h4 data-en="Quick Links" data-es="Accesos Rápidos">Quick Links</h4>
+        <a href="#services" data-en="Services" data-es="Servicios">Services</a>
+        <a href="#why-us"   data-en="Why Us"   data-es="¿Por qué nosotros?">Why Us</a>
+        <a href="#pricing"  data-en="Pricing"  data-es="Precios">Pricing</a>
+        <a href="#about"    data-en="About Us" data-es="Nosotros">About Us</a>
+        <a href="#contact"  data-en="Contact"  data-es="Contacto">Contact</a>
+      </div>
+      <div class="footer__links">
+        <h4 data-en="Services" data-es="Servicios">Services</h4>
+        <a href="#services" data-en="Wellness Exams"    data-es="Exámenes de Bienestar">Wellness Exams</a>
+        <a href="#services" data-en="Vaccinations"      data-es="Vacunaciones">Vaccinations</a>
+        <a href="#services" data-en="Surgery"           data-es="Cirugía">Surgery</a>
+        <a href="#services" data-en="Dental Care"       data-es="Cuidado Dental">Dental Care</a>
+        <a href="#services" data-en="Diagnostics"       data-es="Diagnósticos">Diagnostics</a>
+        <a href="#services" data-en="Pharmacy"          data-es="Farmacia">Pharmacy</a>
+      </div>
+      <div class="footer__contact">
+        <h4 data-en="Contact Us" data-es="Contáctanos">Contact Us</h4>
+        <p>📍 Blvd. Diaz Ordaz 12450<br>Col. El Paraíso, Tijuana, B.C.</p>
+        <p>📞 +1 (619) 555-0147</p>
+        <p>✉️ hello@pawcaretijuana.com</p>
+        <p data-en="🕐 Mon–Sat 8AM–7PM | Sun 9AM–3PM" data-es="🕐 Lun–Sáb 8AM–7PM | Dom 9AM–3PM">🕐 Mon–Sat 8AM–7PM | Sun 9AM–3PM</p>
+      </div>
+    </div>
+    <div class="footer__bottom">
+      <div class="container">
+        <p data-en="© 2025 PawCare Tijuana. All rights reserved. | Licensed Veterinary Clinic — Tijuana, Baja California, México" data-es="© 2025 PawCare Tijuana. Todos los derechos reservados. | Clínica Veterinaria Licenciada — Tijuana, Baja California, México">© 2025 PawCare Tijuana. All rights reserved. | Licensed Veterinary Clinic — Tijuana, Baja California, México</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
