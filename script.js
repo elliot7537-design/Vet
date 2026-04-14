@@ -162,28 +162,80 @@
   }
 
   /* ----------------------------------------------------------
-     SCROLL REVEAL  (lightweight, no library)
+     SCROLL REVEAL
+     – Generic elements: fade up via inline style
+     – Vet cards: CSS class toggle with per-row stagger via data-delay
+     – Team section header: CSS class toggle
   ---------------------------------------------------------- */
   function initScrollReveal() {
-    const targets = document.querySelectorAll(
-      '.service-card, .testimonial-card, .why-us__list li, .team-member, .detail-item'
+    // ── 1. Generic fade-up elements ──────────────────────────
+    const genericTargets = document.querySelectorAll(
+      '.service-card, .testimonial-card, .why-us__list li, .about-vet-chip, .detail-item'
     );
 
-    const observer = new IntersectionObserver((entries) => {
+    const genericObserver = new IntersectionObserver((entries) => {
       entries.forEach(entry => {
         if (entry.isIntersecting) {
           entry.target.style.opacity   = '1';
           entry.target.style.transform = 'translateY(0)';
-          observer.unobserve(entry.target);
+          genericObserver.unobserve(entry.target);
         }
       });
-    }, { threshold: 0.12 });
+    }, { threshold: 0.1 });
 
-    targets.forEach((el, i) => {
+    genericTargets.forEach((el, i) => {
       el.style.opacity    = '0';
       el.style.transform  = 'translateY(28px)';
-      el.style.transition = `opacity 0.5s ease ${i * 0.06}s, transform 0.5s ease ${i * 0.06}s`;
-      observer.observe(el);
+      el.style.transition = `opacity 0.5s ease ${i * 0.055}s, transform 0.5s ease ${i * 0.055}s`;
+      genericObserver.observe(el);
+    });
+
+    // ── 2. Team section header ────────────────────────────────
+    const teamHeader = document.querySelector('.team-header');
+    if (teamHeader) {
+      const headerObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            entry.target.classList.add('is-visible');
+            headerObserver.unobserve(entry.target);
+          }
+        });
+      }, { threshold: 0.2 });
+      headerObserver.observe(teamHeader);
+    }
+
+    // ── 3. Vet cards — staggered per visual row ───────────────
+    // Cards already have opacity:0 / transform via CSS.
+    // We group them by their row (3-across on desktop) so each
+    // row triggers when it enters the viewport, with the
+    // data-delay attribute adding a within-row offset.
+    const vetCards = Array.from(document.querySelectorAll('.vet-card'));
+
+    if (vetCards.length === 0) return;
+
+    // Split into rows of 3 (matches the CSS grid)
+    const COLS = 3;
+    const rows = [];
+    for (let i = 0; i < vetCards.length; i += COLS) {
+      rows.push(vetCards.slice(i, i + COLS));
+    }
+
+    rows.forEach(row => {
+      const rowObserver = new IntersectionObserver((entries) => {
+        entries.forEach(entry => {
+          if (!entry.isIntersecting) return;
+          // Reveal each card in the row with its individual delay
+          row.forEach(card => {
+            const delay = parseInt(card.dataset.delay || '0', 10);
+            setTimeout(() => card.classList.add('is-visible'), delay);
+          });
+          // Unobserve the whole row once triggered
+          row.forEach(card => rowObserver.unobserve(card));
+        });
+      }, { threshold: 0.15 });
+
+      // Observe the first card in the row as the trigger
+      rowObserver.observe(row[0]);
     });
   }
 
